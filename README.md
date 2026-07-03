@@ -1,16 +1,43 @@
-## Hi there 👋
+# Hi 👋, I'm Muhammad Mohsin
 
-<!--
-**mohsanayan0/mohsanayan0** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## 🚀 Android & Flutter Developer
 
-Here are some ideas to get you started:
+I'm a passionate mobile app developer from Pakistan who enjoys building Android and Flutter applications with clean, efficient code.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 💻 Skills
+
+- Flutter
+- Dart
+- Java
+- Android Studio
+- Firebase
+- REST APIs
+- Git & GitHub
+- SQLite
+
+### 🌱 Currently Learning
+
+- Clean Architecture
+- Riverpod
+- BLoC
+- Firebase Cloud Functions
+- CI/CD
+
+### 📂 Projects
+
+- 📱 Flutter Apps
+- 🤖 Android Java Apps
+- 🔥 Firebase Projects
+- 🌐 REST API Integrations
+
+### 📫 Contact
+
+- 📧 Email: mohsanayan0@gmail.com
+- 📍 Location: Lahore, Pakistan
+
+### ⚡ Fun Fact
+
+I love learning new technologies and building apps that solve real-world problems.
+
+---
+⭐ Thanks for visiting my GitHub profile!
