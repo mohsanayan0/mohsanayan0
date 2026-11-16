@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none" role="img" aria-label="UI/UX design">
+  <defs>
+    <linearGradient id="tile" x1="6" y1="6" x2="114" y2="114" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#db2777"/>
+      <stop offset="1" stop-color="#fb923c"/>
+    </linearGradient>
+    <radialGradient id="gloss" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(34 22) scale(90 80)">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".38"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <style>
+    .gloss { animation: gloss 4s ease-in-out infinite; }
+    @keyframes gloss { 0%, 100% { opacity: .55; } 50% { opacity: 1; } }
+    .curve { stroke-dasharray: 100; animation: curve 3.600s ease-in-out infinite; }
+    @keyframes curve { 0% { stroke-dashoffset: 100; } 50%, 80% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 100; } }
+    .h { transform-box: fill-box; transform-origin: center; animation: h 3.600s ease-in-out infinite; }
+    @keyframes h { 0%, 100% { transform: scale(.7); } 50% { transform: scale(1.150); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <rect x="6" y="6" width="108" height="108" rx="28" fill="url(#tile)"/>
+  <rect class="gloss" x="6" y="6" width="108" height="108" rx="28" fill="url(#gloss)"/>
+  <rect x="6.75" y="6.750" width="106.500" height="106.500" rx="27.250" stroke="#ffffff" stroke-opacity=".28" stroke-width="1.500"/>
+  <path d="M36 44h48" stroke="#ffffff" stroke-opacity=".75" stroke-width="3" stroke-linecap="round"/>
+  <path class="curve" pathLength="100" d="M30 84C36 30 84 30 90 84" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+  <circle class="h" cx="36" cy="44" r="5" fill="#ffffff"/>
+  <circle class="h" cx="84" cy="44" r="5" fill="#ffffff"/>
+  <rect x="54" y="38" width="12" height="12" rx="2" fill="#ffffff"/>
+  <rect x="24" y="78" width="12" height="12" rx="2" fill="#fff7ed" stroke="#9d174d" stroke-width="2.500"/>
+  <rect x="84" y="78" width="12" height="12" rx="2" fill="#fff7ed" stroke="#9d174d" stroke-width="2.500"/>
+</svg>

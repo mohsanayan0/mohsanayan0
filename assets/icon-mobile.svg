@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none" role="img" aria-label="Mobile apps">
+  <defs>
+    <linearGradient id="tile" x1="6" y1="6" x2="114" y2="114" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+    <radialGradient id="gloss" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(34 22) scale(90 80)">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".38"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <style>
+    .gloss { animation: gloss 4s ease-in-out infinite; }
+    @keyframes gloss { 0%, 100% { opacity: .55; } 50% { opacity: 1; } }
+    .l { transform-box: fill-box; transform-origin: left center; animation: line 3s ease-in-out infinite; }
+    @keyframes line { 0%, 100% { transform: scaleX(.45); } 50% { transform: scaleX(1); } }
+    .ping { transform-box: fill-box; transform-origin: center; animation: ping 1.8s ease-out infinite; }
+    @keyframes ping { 0% { transform: scale(1); opacity: .8; } 100% { transform: scale(2.4); opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <rect x="6" y="6" width="108" height="108" rx="28" fill="url(#tile)"/>
+  <rect class="gloss" x="6" y="6" width="108" height="108" rx="28" fill="url(#gloss)"/>
+  <rect x="6.75" y="6.750" width="106.500" height="106.500" rx="27.250" stroke="#ffffff" stroke-opacity=".28" stroke-width="1.500"/>
+  <rect x="39" y="24" width="42" height="72" rx="10" stroke="#ffffff" stroke-width="5"/>
+  <path d="M54 87h12" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  <g stroke="#ffffff" stroke-width="4.500" stroke-linecap="round">
+    <path class="l" d="M49 42h22"/>
+    <path class="l" style="animation-delay:-.5s" d="M49 54h22"/>
+    <path class="l" style="animation-delay:-1s" d="M49 66h22"/>
+  </g>
+  <circle class="ping" cx="84" cy="28" r="9" fill="#fde047"/>
+  <circle cx="84" cy="28" r="9" fill="#fde047" stroke="#1d4ed8" stroke-width="3"/>
+</svg>

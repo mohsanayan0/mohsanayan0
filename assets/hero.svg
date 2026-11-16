@@ -1,0 +1,294 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Muhammad Mohsin, Full-Stack Software Developer</title>
+  <desc id="desc">Animated banner. Muhammad Mohsin is open to work and builds Android and Flutter apps, React and Python web apps, and clean, modern UI/UX. Focus areas: Mobile, Web, Backend and UI/UX. Illustration of a browser window and a phone screen with floating design elements.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#060713"/>
+      <stop offset=".6" stop-color="#0a1024"/>
+      <stop offset="1" stop-color="#0e1634"/>
+    </linearGradient>
+    <radialGradient id="gBlue"><stop offset="0" stop-color="#3b82f6" stop-opacity=".55"/><stop offset="1" stop-color="#3b82f6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gTeal"><stop offset="0" stop-color="#14b8a6" stop-opacity=".34"/><stop offset="1" stop-color="#14b8a6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gViolet"><stop offset="0" stop-color="#8b5cf6" stop-opacity=".36"/><stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gPink"><stop offset="0" stop-color="#ec4899" stop-opacity=".26"/><stop offset="1" stop-color="#ec4899" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 .5H.5V40" stroke="#ffffff" stroke-opacity=".07"/>
+    </pattern>
+    <radialGradient id="gridFade" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(930 210) scale(600 340)">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="gridMask" maskUnits="userSpaceOnUse" x="0" y="0" width="1200" height="420">
+      <rect width="1200" height="420" fill="url(#gridFade)"/>
+    </mask>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <linearGradient id="accentV" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#60a5fa"/>
+      <stop offset=".5" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <linearGradient id="badge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="runGrad" x1="0" y1="0" x2="1200" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#67e8f9"/>
+      <stop offset=".5" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <linearGradient id="sweepGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#67e8f9" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#67e8f9"/>
+      <stop offset="1" stop-color="#67e8f9" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="1200" height="420" rx="28"/></clipPath>
+    <clipPath id="barClip"><rect x="73" y="233" width="518" height="48" rx="11"/></clipPath>
+    <clipPath id="nameClip">
+      <text x="70" y="204" font-size="60" font-weight="800" letter-spacing="-1.2" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif">Muhammad Mohsin</text>
+    </clipPath>
+  </defs>
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
+
+    .a1 { animation: drift1 16s ease-in-out infinite alternate; }
+    .a2 { animation: drift2 20s ease-in-out infinite alternate; }
+    .a3 { animation: drift3 18s ease-in-out infinite alternate; }
+    @keyframes drift1 { from { transform: translate(0, 0); } to { transform: translate(-110px, 50px); } }
+    @keyframes drift2 { from { transform: translate(0, 0); } to { transform: translate(130px, -40px); } }
+    @keyframes drift3 { from { transform: translate(0, 0); } to { transform: translate(-80px, -60px); } }
+
+    .run { animation: run 7s linear infinite; }
+    @keyframes run { to { stroke-dashoffset: -100; } }
+
+    .tw { animation: tw 3.2s ease-in-out infinite; }
+    @keyframes tw { 0%, 100% { opacity: .15; } 50% { opacity: .95; } }
+
+    .spark { transform-box: fill-box; transform-origin: center; animation: spark 3.6s ease-in-out infinite; }
+    @keyframes spark { 0%, 100% { transform: scale(.3) rotate(0deg); opacity: 0; } 50% { transform: scale(1) rotate(45deg); opacity: 1; } }
+
+    .pulse { transform-box: fill-box; transform-origin: center; animation: pulse 2s ease-out infinite; }
+    @keyframes pulse { 0% { transform: scale(1); opacity: .7; } 100% { transform: scale(3.4); opacity: 0; } }
+
+    .sweep { animation: sweep 6s ease-in-out infinite; }
+    @keyframes sweep { 0% { transform: translateX(-200px); } 50%, 100% { transform: translateX(760px); } }
+
+    .f1 { animation: float 6s ease-in-out infinite; }
+    .f2 { animation: float 7s ease-in-out -2.5s infinite; }
+    .f3 { animation: float 5.5s ease-in-out -1.2s infinite; }
+    .f4 { animation: float 6.5s ease-in-out -3.4s infinite; }
+    .f5 { animation: float 5s ease-in-out -2s infinite; }
+    @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-9px); } }
+
+    .ants { animation: ants 1.2s linear infinite; }
+    @keyframes ants { to { stroke-dashoffset: -20; } }
+
+    .draw { stroke-dasharray: 112; animation: draw 4.5s ease-in-out infinite; }
+    @keyframes draw { 0% { stroke-dashoffset: 112; } 45%, 85% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 112; } }
+
+    .bar { transform-box: fill-box; transform-origin: bottom; animation: grow 4s ease-in-out infinite; }
+    @keyframes grow { 0%, 100% { transform: scaleY(.35); } 50% { transform: scaleY(1); } }
+
+    .knob { animation: knob 4s ease-in-out infinite; }
+    @keyframes knob { 0%, 40% { transform: translateX(0); } 50%, 90% { transform: translateX(24px); } 100% { transform: translateX(0); } }
+    .track { animation: track 4s ease-in-out infinite; }
+    @keyframes track { 0%, 40% { fill: #334155; } 50%, 90% { fill: #2dd4bf; } 100% { fill: #334155; } }
+
+    .cta { animation: cta 2.4s ease-in-out infinite; }
+    @keyframes cta { 0%, 100% { opacity: 0; } 50% { opacity: .7; } }
+
+    .blink { animation: blink 1.1s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+
+    /* typed line: a cover slides off the text one character at a time */
+    .type { transform: translateX(435px); animation: type 16s linear infinite; }
+    @keyframes type {
+      0% { transform: translateX(435px); }
+      14.375% { transform: translateX(435px); animation-timing-function: steps(15, end); }
+      17.5% { transform: translateX(0); }
+      18.75% { transform: translateX(0); animation-timing-function: steps(22, end); }
+      25% { transform: translateX(330px); }
+      39.375% { transform: translateX(330px); animation-timing-function: steps(11, end); }
+      42.5% { transform: translateX(0); }
+      43.75% { transform: translateX(0); animation-timing-function: steps(23, end); }
+      50% { transform: translateX(345px); }
+      64.375% { transform: translateX(345px); animation-timing-function: steps(13, end); }
+      67.5% { transform: translateX(0); }
+      68.75% { transform: translateX(0); animation-timing-function: steps(26, end); }
+      75% { transform: translateX(390px); }
+      89.375% { transform: translateX(390px); animation-timing-function: steps(13, end); }
+      92.5% { transform: translateX(0); }
+      93.75% { transform: translateX(0); animation-timing-function: steps(29, end); }
+      100% { transform: translateX(435px); }
+    }
+    .p0 { animation: p0 16s steps(1, end) infinite; }
+    .p1 { opacity: 0; animation: p1 16s steps(1, end) infinite; }
+    .p2 { opacity: 0; animation: p2 16s steps(1, end) infinite; }
+    .p3 { opacity: 0; animation: p3 16s steps(1, end) infinite; }
+    @keyframes p0 { 0% { opacity: 1; } 18% { opacity: 0; } 93.6% { opacity: 1; } 100% { opacity: 1; } }
+    @keyframes p1 { 0% { opacity: 0; } 18% { opacity: 1; } 43% { opacity: 0; } 100% { opacity: 0; } }
+    @keyframes p2 { 0% { opacity: 0; } 43% { opacity: 1; } 68% { opacity: 0; } 100% { opacity: 0; } }
+    @keyframes p3 { 0% { opacity: 0; } 68% { opacity: 1; } 93.6% { opacity: 0; } 100% { opacity: 0; } }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+  </style>
+
+  <!-- background -->
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="420" fill="url(#bg)"/>
+    <circle class="a1" cx="980" cy="50" r="400" fill="url(#gBlue)"/>
+    <circle class="a2" cx="150" cy="450" r="350" fill="url(#gTeal)"/>
+    <circle class="a3" cx="700" cy="440" r="310" fill="url(#gViolet)"/>
+    <circle class="a2" cx="1190" cy="390" r="250" fill="url(#gPink)"/>
+    <rect width="1200" height="420" fill="url(#grid)" mask="url(#gridMask)"/>
+
+    <!-- stars -->
+    <g fill="#ffffff">
+      <circle class="tw" cx="646" cy="58" r="1.6"/>
+      <circle class="tw" cx="1108" cy="46" r="1.8" style="animation-delay:-1.1s"/>
+      <circle class="tw" cx="1180" cy="206" r="1.5" style="animation-delay:-2.3s"/>
+      <circle class="tw" cx="884" cy="392" r="1.6" style="animation-delay:-.6s"/>
+      <circle class="tw" cx="770" cy="50" r="1.3" style="animation-delay:-1.8s"/>
+      <circle class="tw" cx="612" cy="386" r="1.5" style="animation-delay:-2.8s"/>
+      <circle class="tw" cx="318" cy="50" r="1.4" style="animation-delay:-.9s"/>
+      <circle class="tw" cx="486" cy="92" r="1.3" style="animation-delay:-2s"/>
+      <circle class="tw" cx="38" cy="214" r="1.3" style="animation-delay:-1.4s"/>
+      <circle class="tw" cx="236" cy="388" r="1.5" style="animation-delay:-.3s"/>
+      <circle class="tw" cx="1000" cy="398" r="1.3" style="animation-delay:-2.6s"/>
+    </g>
+  </g>
+
+  <!-- frame with a light running around it -->
+  <rect x="1.25" y="1.25" width="1197.5" height="417.5" rx="26.75" stroke="#ffffff" stroke-opacity=".1" stroke-width="1.5"/>
+  <path class="run" d="M28 1.25H1172A26.75 26.75 0 0 1 1198.75 28V392A26.75 26.75 0 0 1 1172 418.75H28A26.75 26.75 0 0 1 1.25 392V28A26.75 26.75 0 0 1 28 1.25Z" pathLength="100" stroke="url(#runGrad)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="10 40"/>
+
+  <!-- status pill -->
+  <rect x="72" y="92" width="152" height="34" rx="17" fill="#34d399" fill-opacity=".1" stroke="#34d399" stroke-opacity=".45"/>
+  <circle class="pulse" cx="92" cy="109" r="5" fill="#34d399"/>
+  <circle cx="92" cy="109" r="5" fill="#34d399"/>
+  <text class="sans" x="106" y="114.5" font-size="15.5" font-weight="600" fill="#a7f3d0">Open to work</text>
+
+  <!-- name with a light sweep -->
+  <text class="sans" x="70" y="204" font-size="60" font-weight="800" letter-spacing="-1.2" fill="#f8fafc">Muhammad Mohsin</text>
+  <g clip-path="url(#nameClip)">
+    <g transform="skewX(-20)">
+      <rect class="sweep" x="60" y="140" width="150" height="90" fill="url(#sweepGrad)"/>
+    </g>
+  </g>
+
+  <!-- typed role line -->
+  <rect x="72" y="232" width="520" height="50" rx="12" fill="#0a1022"/>
+  <text class="mono" x="92" y="265" font-size="24" font-weight="700" fill="#2dd4bf">&gt;</text>
+  <g class="mono" font-size="25" fill="#e2e8f0">
+    <text class="p0" x="120" y="265.5" textLength="435" lengthAdjust="spacing">Full-Stack Software Developer</text>
+    <text class="p1" x="120" y="265.5" textLength="330" lengthAdjust="spacing">Android &amp; Flutter Apps</text>
+    <text class="p2" x="120" y="265.5" textLength="345" lengthAdjust="spacing">React &amp; Python Web Apps</text>
+    <text class="p3" x="120" y="265.5" textLength="390" lengthAdjust="spacing">Clean, Modern UI/UX Design</text>
+  </g>
+  <g clip-path="url(#barClip)">
+    <g class="type">
+      <rect x="120" y="234" width="480" height="46" fill="#0a1022"/>
+      <rect class="blink" x="124" y="244" width="12" height="26" rx="2" fill="#2dd4bf"/>
+    </g>
+  </g>
+  <rect x="72" y="232" width="520" height="50" rx="12" stroke="#ffffff" stroke-opacity=".14" stroke-width="1.5"/>
+
+  <!-- focus chips -->
+  <g class="sans" font-size="17.5" font-weight="500" fill="#cbd5e1">
+    <rect x="72" y="302" width="112" height="38" rx="19" fill="#ffffff" fill-opacity=".05" stroke="#ffffff" stroke-opacity=".16"/>
+    <circle cx="92" cy="321" r="4.5" fill="#60a5fa"/>
+    <text x="104" y="327">Mobile</text>
+    <rect x="196" y="302" width="92" height="38" rx="19" fill="#ffffff" fill-opacity=".05" stroke="#ffffff" stroke-opacity=".16"/>
+    <circle cx="216" cy="321" r="4.5" fill="#2dd4bf"/>
+    <text x="228" y="327">Web</text>
+    <rect x="300" y="302" width="124" height="38" rx="19" fill="#ffffff" fill-opacity=".05" stroke="#ffffff" stroke-opacity=".16"/>
+    <circle cx="320" cy="321" r="4.5" fill="#a78bfa"/>
+    <text x="332" y="327">Backend</text>
+    <rect x="436" y="302" width="106" height="38" rx="19" fill="#ffffff" fill-opacity=".05" stroke="#ffffff" stroke-opacity=".16"/>
+    <circle cx="456" cy="321" r="4.5" fill="#f472b6"/>
+    <text x="468" y="327">UI/UX</text>
+  </g>
+
+  <!-- sparkles -->
+  <g transform="translate(1128 84)"><path class="spark" d="M0-11L2.6-2.6 11 0 2.6 2.6 0 11-2.6 2.6-11 0-2.6-2.6Z" fill="#67e8f9"/></g>
+  <g transform="translate(672 156) scale(.7)"><path class="spark" style="animation-delay:-1.8s" d="M0-11L2.6-2.6 11 0 2.6 2.6 0 11-2.6 2.6-11 0-2.6-2.6Z" fill="#c4b5fd"/></g>
+
+  <!-- browser window -->
+  <g class="f1">
+    <rect x="700" y="92" width="350" height="232" rx="16" fill="#0b1226" fill-opacity=".94" stroke="#ffffff" stroke-opacity=".14" stroke-width="1.5"/>
+    <circle cx="724" cy="116" r="5" fill="#f87171"/>
+    <circle cx="742" cy="116" r="5" fill="#fbbf24"/>
+    <circle cx="760" cy="116" r="5" fill="#34d399"/>
+    <rect x="786" y="106" width="180" height="20" rx="10" fill="#ffffff" fill-opacity=".07"/>
+    <path d="M700 140H1050" stroke="#ffffff" stroke-opacity=".1" stroke-width="1.5"/>
+
+    <rect x="724" y="160" width="160" height="72" rx="10" fill="url(#accent)" fill-opacity=".16" stroke="#60a5fa" stroke-opacity=".35"/>
+    <text class="mono" x="804" y="206" font-size="28" font-weight="700" fill="#93c5fd" text-anchor="middle">&lt;/&gt;</text>
+
+    <rect class="ants" x="716" y="152" width="176" height="88" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="6 4"/>
+    <rect x="712" y="148" width="8" height="8" fill="#0b1226" stroke="#a78bfa" stroke-width="1.5"/>
+    <rect x="888" y="148" width="8" height="8" fill="#0b1226" stroke="#a78bfa" stroke-width="1.5"/>
+    <rect x="712" y="236" width="8" height="8" fill="#0b1226" stroke="#a78bfa" stroke-width="1.5"/>
+    <rect x="888" y="236" width="8" height="8" fill="#0b1226" stroke="#a78bfa" stroke-width="1.5"/>
+    <path d="M900 242l5 17 4-7 8-2z" fill="#a78bfa" stroke="#0b1226" stroke-width="1"/>
+
+    <rect x="724" y="262" width="150" height="9" rx="4.5" fill="#ffffff" fill-opacity=".2"/>
+    <rect x="724" y="282" width="104" height="9" rx="4.5" fill="#ffffff" fill-opacity=".1"/>
+    <rect x="724" y="302" width="64" height="9" rx="4.5" fill="#2dd4bf" fill-opacity=".6"/>
+
+    <rect x="912" y="160" width="104" height="96" rx="10" fill="#ffffff" fill-opacity=".05" stroke="#ffffff" stroke-opacity=".1"/>
+    <rect class="bar" x="926" y="214" width="12" height="30" rx="3" fill="#60a5fa"/>
+    <rect class="bar" style="animation-delay:-.6s" x="948" y="192" width="12" height="52" rx="3" fill="#2dd4bf"/>
+    <rect class="bar" style="animation-delay:-1.2s" x="970" y="204" width="12" height="40" rx="3" fill="#a78bfa"/>
+    <rect class="bar" style="animation-delay:-1.8s" x="992" y="180" width="12" height="64" rx="3" fill="#f472b6"/>
+    <rect x="912" y="268" width="104" height="40" rx="10" fill="#ffffff" fill-opacity=".05" stroke="#ffffff" stroke-opacity=".1"/>
+    <rect x="924" y="280" width="40" height="7" rx="3.5" fill="#60a5fa" fill-opacity=".75"/>
+    <rect x="924" y="293" width="62" height="6" rx="3" fill="#ffffff" fill-opacity=".14"/>
+  </g>
+
+  <!-- phone -->
+  <g class="f2">
+    <rect x="1030" y="118" width="132" height="252" rx="24" fill="#090e1e" stroke="url(#accentV)" stroke-width="2.5"/>
+    <rect x="1078" y="130" width="36" height="6" rx="3" fill="#ffffff" fill-opacity=".22"/>
+    <circle cx="1057" cy="166" r="12" fill="url(#accent)"/>
+    <rect x="1077" y="158" width="58" height="7" rx="3.5" fill="#ffffff" fill-opacity=".28"/>
+    <rect x="1077" y="171" width="38" height="6" rx="3" fill="#ffffff" fill-opacity=".13"/>
+    <rect x="1045" y="192" width="102" height="64" rx="12" fill="#2dd4bf" fill-opacity=".14" stroke="#2dd4bf" stroke-opacity=".4"/>
+    <path class="draw" d="M1057 240l15-17 13 9 15-23 14 13 18-15" stroke="#2dd4bf" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="1045" y="268" width="102" height="11" rx="5.5" fill="#ffffff" fill-opacity=".13"/>
+    <rect x="1045" y="286" width="74" height="11" rx="5.5" fill="#ffffff" fill-opacity=".09"/>
+    <rect class="cta" x="1040" y="311" width="112" height="40" rx="20" stroke="#67e8f9" stroke-width="2"/>
+    <rect x="1045" y="316" width="102" height="30" rx="15" fill="url(#accent)"/>
+    <rect x="1078" y="328" width="36" height="6" rx="3" fill="#090e1e" fill-opacity=".55"/>
+  </g>
+
+  <!-- floating colour palette -->
+  <g class="f3">
+    <rect x="912" y="40" width="132" height="46" rx="14" fill="#0b1226" fill-opacity=".96" stroke="#ffffff" stroke-opacity=".16" stroke-width="1.5"/>
+    <circle cx="936" cy="63" r="9" fill="#60a5fa"/>
+    <circle cx="964" cy="63" r="9" fill="#2dd4bf"/>
+    <circle cx="992" cy="63" r="9" fill="#a78bfa"/>
+    <circle cx="1020" cy="63" r="9" fill="#f472b6"/>
+  </g>
+
+  <!-- floating toggle -->
+  <g class="f4">
+    <rect x="838" y="308" width="118" height="46" rx="14" fill="#0b1226" fill-opacity=".96" stroke="#ffffff" stroke-opacity=".16" stroke-width="1.5"/>
+    <rect class="track" x="852" y="320" width="46" height="22" rx="11" fill="#334155"/>
+    <circle class="knob" cx="863" cy="331" r="8" fill="#ffffff"/>
+    <rect x="908" y="323" width="34" height="6" rx="3" fill="#ffffff" fill-opacity=".26"/>
+    <rect x="908" y="335" width="22" height="6" rx="3" fill="#ffffff" fill-opacity=".13"/>
+  </g>
+
+  <!-- floating code badge -->
+  <g class="f5">
+    <circle cx="694" cy="322" r="30" fill="url(#badge)"/>
+    <circle cx="694" cy="322" r="30" stroke="#ffffff" stroke-opacity=".25" stroke-width="1.5"/>
+    <text class="mono" x="694" y="330" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">{ }</text>
+  </g>
+</svg>

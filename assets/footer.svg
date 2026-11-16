@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="190" viewBox="0 0 1200 190" fill="none" role="img" aria-labelledby="title">
+  <title id="title">Let's build something great together. Thanks for visiting.</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="190" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#060713"/>
+      <stop offset=".6" stop-color="#0a1024"/>
+      <stop offset="1" stop-color="#0e1634"/>
+    </linearGradient>
+    <radialGradient id="gBlue"><stop offset="0" stop-color="#3b82f6" stop-opacity=".45"/><stop offset="1" stop-color="#3b82f6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gViolet"><stop offset="0" stop-color="#8b5cf6" stop-opacity=".36"/><stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="w1" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2dd4bf"/>
+      <stop offset=".5" stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="w2" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset=".5" stop-color="#f472b6"/>
+      <stop offset="1" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="head" x1="330" y1="0" x2="870" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#67e8f9"/>
+      <stop offset=".5" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#c4b5fd"/>
+    </linearGradient>
+    <linearGradient id="runGrad" x1="0" y1="0" x2="1200" y2="190" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#67e8f9"/>
+      <stop offset=".5" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="1200" height="190" rx="24"/></clipPath>
+  </defs>
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; }
+    .wa { animation: wave 9s linear infinite; }
+    .wb { animation: wave 13s linear infinite reverse; }
+    .wc { animation: wave 17s linear infinite; }
+    @keyframes wave { from { transform: translateX(0); } to { transform: translateX(-600px); } }
+    .a1 { animation: drift 14s ease-in-out infinite alternate; }
+    @keyframes drift { from { transform: translateX(0); } to { transform: translateX(120px); } }
+    .tw { animation: tw 3.2s ease-in-out infinite; }
+    @keyframes tw { 0%, 100% { opacity: .15; } 50% { opacity: .95; } }
+    .run { animation: run 8s linear infinite; }
+    @keyframes run { to { stroke-dashoffset: -100; } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="190" fill="url(#bg)"/>
+    <circle class="a1" cx="240" cy="-40" r="300" fill="url(#gBlue)"/>
+    <circle class="a1" style="animation-direction:alternate-reverse" cx="980" cy="230" r="300" fill="url(#gViolet)"/>
+
+    <g fill="#ffffff">
+      <circle class="tw" cx="96" cy="46" r="1.500"/>
+      <circle class="tw" cx="212" cy="96" r="1.300" style="animation-delay:-1.200s"/>
+      <circle class="tw" cx="1010" cy="40" r="1.600" style="animation-delay:-2.100s"/>
+      <circle class="tw" cx="1122" cy="88" r="1.300" style="animation-delay:-.700s"/>
+      <circle class="tw" cx="884" cy="28" r="1.300" style="animation-delay:-2.700s"/>
+      <circle class="tw" cx="330" cy="30" r="1.400" style="animation-delay:-1.700s"/>
+    </g>
+
+    <!-- waves: each path repeats every 600px so the loop is seamless -->
+    <path class="wc" d="M0 146Q150 126 300 146T600 146T900 146T1200 146T1500 146T1800 146V190H0Z" fill="url(#w2)" fill-opacity=".22"/>
+    <path class="wb" d="M0 156Q150 178 300 156T600 156T900 156T1200 156T1500 156T1800 156V190H0Z" fill="url(#w1)" fill-opacity=".3"/>
+    <path class="wa" d="M0 168Q150 152 300 168T600 168T900 168T1200 168T1500 168T1800 168V190H0Z" fill="url(#w1)" fill-opacity=".55"/>
+  </g>
+
+  <rect x="1.250" y="1.250" width="1197.500" height="187.500" rx="22.750" stroke="#ffffff" stroke-opacity=".1" stroke-width="1.500"/>
+  <path class="run" d="M24 1.250H1176A22.750 22.750 0 0 1 1198.750 24V166A22.750 22.750 0 0 1 1176 188.750H24A22.750 22.750 0 0 1 1.250 166V24A22.750 22.750 0 0 1 24 1.250Z" pathLength="100" stroke="url(#runGrad)" stroke-width="2.500" stroke-linecap="round" stroke-dasharray="8 42"/>
+
+  <g class="sans" text-anchor="middle">
+    <text x="600" y="76" font-size="36" font-weight="800" letter-spacing="-.6" fill="url(#head)">Let's build something great together</text>
+    <text x="600" y="110" font-size="17" fill="#94a3b8">Thanks for visiting. My inbox is always open.</text>
+  </g>
+</svg>

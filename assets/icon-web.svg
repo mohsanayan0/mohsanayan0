@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none" role="img" aria-label="Web apps">
+  <defs>
+    <linearGradient id="tile" x1="6" y1="6" x2="114" y2="114" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0d9488"/>
+      <stop offset="1" stop-color="#4ade80"/>
+    </linearGradient>
+    <radialGradient id="gloss" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(34 22) scale(90 80)">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".38"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <style>
+    .gloss { animation: gloss 4s ease-in-out infinite; }
+    @keyframes gloss { 0%, 100% { opacity: .55; } 50% { opacity: 1; } }
+    .lt { animation: lt 2.4s ease-in-out infinite; }
+    .rt { animation: rt 2.4s ease-in-out infinite; }
+    @keyframes lt { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(-4px); } }
+    @keyframes rt { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(4px); } }
+    .sl { animation: sl 1.2s steps(1) infinite; }
+    @keyframes sl { 50% { opacity: .35; } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <rect x="6" y="6" width="108" height="108" rx="28" fill="url(#tile)"/>
+  <rect class="gloss" x="6" y="6" width="108" height="108" rx="28" fill="url(#gloss)"/>
+  <rect x="6.75" y="6.750" width="106.500" height="106.500" rx="27.250" stroke="#ffffff" stroke-opacity=".28" stroke-width="1.500"/>
+  <rect x="23" y="28" width="74" height="64" rx="11" stroke="#ffffff" stroke-width="5"/>
+  <path d="M23 45h74" stroke="#ffffff" stroke-width="4"/>
+  <circle cx="33" cy="37" r="2.600" fill="#ffffff"/>
+  <circle cx="42" cy="37" r="2.600" fill="#ffffff"/>
+  <g stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path class="lt" d="M49 58l-10 10 10 10"/>
+    <path class="rt" d="M71 58l10 10-10 10"/>
+    <path class="sl" d="M64 55l-8 26"/>
+  </g>
+</svg>

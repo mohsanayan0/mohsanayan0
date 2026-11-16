@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none" role="img" aria-label="Backend and APIs">
+  <defs>
+    <linearGradient id="tile" x1="6" y1="6" x2="114" y2="114" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6d28d9"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <radialGradient id="gloss" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(34 22) scale(90 80)">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".38"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <style>
+    .gloss { animation: gloss 4s ease-in-out infinite; }
+    @keyframes gloss { 0%, 100% { opacity: .55; } 50% { opacity: 1; } }
+    .led { animation: led 1.8s steps(1) infinite; }
+    @keyframes led { 0%, 100% { fill: #ffffff; } 34% { fill: #86efac; } 67% { fill: #ffffff; } }
+    .d { transform-box: fill-box; transform-origin: left center; animation: d 2.4s ease-in-out infinite; }
+    @keyframes d { 0%, 100% { transform: scaleX(.4); } 50% { transform: scaleX(1); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <rect x="6" y="6" width="108" height="108" rx="28" fill="url(#tile)"/>
+  <rect class="gloss" x="6" y="6" width="108" height="108" rx="28" fill="url(#gloss)"/>
+  <rect x="6.75" y="6.750" width="106.500" height="106.500" rx="27.250" stroke="#ffffff" stroke-opacity=".28" stroke-width="1.500"/>
+  <g stroke="#ffffff" stroke-width="5">
+    <rect x="27" y="26" width="66" height="19" rx="7"/>
+    <rect x="27" y="50.500" width="66" height="19" rx="7"/>
+    <rect x="27" y="75" width="66" height="19" rx="7"/>
+  </g>
+  <circle class="led" cx="39" cy="35.500" r="3.400" fill="#ffffff"/>
+  <circle class="led" style="animation-delay:-.6s" cx="39" cy="60" r="3.400" fill="#ffffff"/>
+  <circle class="led" style="animation-delay:-1.200s" cx="39" cy="84.500" r="3.400" fill="#ffffff"/>
+  <g stroke="#ffffff" stroke-width="4" stroke-linecap="round">
+    <path class="d" d="M52 35.500h28"/>
+    <path class="d" style="animation-delay:-.8s" d="M52 60h28"/>
+    <path class="d" style="animation-delay:-1.600s" d="M52 84.500h28"/>
+  </g>
+</svg>
