@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Muhammad Mohsin, Full-Stack Software Developer</title>
+  <desc id="desc">Banner with the name Muhammad Mohsin, the role Full-Stack Software Developer and the focus areas Mobile, Web, Backend and UI/UX, beside an illustration of a browser window and a phone screen.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0a0f1e"/>
+      <stop offset="1" stop-color="#0f1b30"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(960 40) scale(460 320)">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(120 360) scale(420 260)">
+      <stop offset="0" stop-color="#14b8a6" stop-opacity=".26"/>
+      <stop offset="1" stop-color="#14b8a6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="72" y1="0" x2="520" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <linearGradient id="accentBox" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#ffffff" fill-opacity=".06"/>
+    </pattern>
+    <clipPath id="card">
+      <rect width="1200" height="340" rx="24"/>
+    </clipPath>
+  </defs>
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
+    .float { animation: float 6s ease-in-out infinite; }
+    .blink { animation: blink 1.2s steps(1) infinite; }
+    @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+    @keyframes blink { 50% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .float, .blink { animation: none; } }
+  </style>
+
+  <!-- background -->
+  <g clip-path="url(#card)">
+    <rect width="1200" height="340" fill="url(#bg)"/>
+    <rect width="1200" height="340" fill="url(#dots)"/>
+    <rect width="1200" height="340" fill="url(#glowA)"/>
+    <rect width="1200" height="340" fill="url(#glowB)"/>
+  </g>
+  <rect x=".75" y=".75" width="1198.5" height="338.5" rx="23.25" stroke="#ffffff" stroke-opacity=".09" stroke-width="1.5"/>
+
+  <!-- text block -->
+  <text class="mono" x="72" y="92" font-size="21" fill="#2dd4bf">&gt; hello, I'm<tspan class="blink">_</tspan></text>
+  <text class="sans" x="70" y="162" font-size="57" font-weight="700" letter-spacing="-1" fill="#f8fafc">Muhammad Mohsin</text>
+  <text class="sans" x="72" y="210" font-size="31" font-weight="600" fill="url(#accent)">Full-Stack Software Developer</text>
+
+  <!-- focus chips -->
+  <g class="sans" font-size="18" font-weight="500" fill="#cbd5e1" text-anchor="middle">
+    <rect x="72" y="244" width="100" height="38" rx="19" fill="#ffffff" fill-opacity=".05" stroke="#ffffff" stroke-opacity=".16"/>
+    <text x="122" y="269">Mobile</text>
+    <rect x="184" y="244" width="80" height="38" rx="19" fill="#ffffff" fill-opacity=".05" stroke="#ffffff" stroke-opacity=".16"/>
+    <text x="224" y="269">Web</text>
+    <rect x="276" y="244" width="112" height="38" rx="19" fill="#ffffff" fill-opacity=".05" stroke="#ffffff" stroke-opacity=".16"/>
+    <text x="332" y="269">Backend</text>
+    <rect x="400" y="244" width="96" height="38" rx="19" fill="#ffffff" fill-opacity=".05" stroke="#ffffff" stroke-opacity=".16"/>
+    <text x="448" y="269">UI/UX</text>
+  </g>
+
+  <!-- browser window -->
+  <g transform="translate(18 0)">
+    <rect x="690" y="52" width="372" height="232" rx="14" fill="#0b1324" fill-opacity=".92" stroke="#ffffff" stroke-opacity=".14" stroke-width="1.5"/>
+    <circle cx="714" cy="76" r="5" fill="#f87171"/>
+    <circle cx="732" cy="76" r="5" fill="#fbbf24"/>
+    <circle cx="750" cy="76" r="5" fill="#34d399"/>
+    <rect x="776" y="66" width="190" height="20" rx="10" fill="#ffffff" fill-opacity=".07"/>
+    <path d="M690 100H1062" stroke="#ffffff" stroke-opacity=".1" stroke-width="1.5"/>
+
+    <!-- hero block with code mark -->
+    <rect x="714" y="120" width="170" height="74" rx="10" fill="url(#accentBox)" fill-opacity=".16" stroke="#60a5fa" stroke-opacity=".35"/>
+    <text class="mono" x="799" y="167" font-size="28" font-weight="700" fill="#93c5fd" text-anchor="middle">&lt;/&gt;</text>
+
+    <!-- design selection frame -->
+    <rect x="706" y="112" width="186" height="90" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="5 5"/>
+    <rect x="702" y="108" width="8" height="8" fill="#0b1324" stroke="#a78bfa" stroke-width="1.5"/>
+    <rect x="888" y="108" width="8" height="8" fill="#0b1324" stroke="#a78bfa" stroke-width="1.5"/>
+    <rect x="702" y="198" width="8" height="8" fill="#0b1324" stroke="#a78bfa" stroke-width="1.5"/>
+    <rect x="888" y="198" width="8" height="8" fill="#0b1324" stroke="#a78bfa" stroke-width="1.5"/>
+    <path d="M900 204l5 17 4-7 8-2z" fill="#a78bfa" stroke="#0b1324" stroke-width="1"/>
+
+    <!-- text lines -->
+    <rect x="714" y="222" width="150" height="9" rx="4.5" fill="#ffffff" fill-opacity=".2"/>
+    <rect x="714" y="242" width="108" height="9" rx="4.5" fill="#ffffff" fill-opacity=".1"/>
+    <rect x="714" y="262" width="64" height="9" rx="4.5" fill="#2dd4bf" fill-opacity=".55"/>
+
+    <!-- side cards -->
+    <rect x="912" y="120" width="72" height="46" rx="8" fill="#ffffff" fill-opacity=".06" stroke="#ffffff" stroke-opacity=".1"/>
+    <rect x="912" y="176" width="72" height="46" rx="8" fill="#ffffff" fill-opacity=".06" stroke="#ffffff" stroke-opacity=".1"/>
+    <rect x="922" y="132" width="34" height="7" rx="3.5" fill="#60a5fa" fill-opacity=".7"/>
+    <rect x="922" y="146" width="48" height="6" rx="3" fill="#ffffff" fill-opacity=".14"/>
+    <rect x="922" y="188" width="34" height="7" rx="3.5" fill="#2dd4bf" fill-opacity=".7"/>
+    <rect x="922" y="202" width="48" height="6" rx="3" fill="#ffffff" fill-opacity=".14"/>
+  </g>
+
+  <!-- phone -->
+  <g transform="translate(18 0)"><g class="float">
+    <rect x="1004" y="86" width="126" height="226" rx="22" fill="#0a1020" stroke="#60a5fa" stroke-opacity=".75" stroke-width="2"/>
+    <rect x="1049" y="97" width="36" height="6" rx="3" fill="#ffffff" fill-opacity=".22"/>
+    <circle cx="1030" cy="132" r="11" fill="url(#accentBox)"/>
+    <rect x="1048" y="124" width="56" height="7" rx="3.5" fill="#ffffff" fill-opacity=".28"/>
+    <rect x="1048" y="137" width="38" height="6" rx="3" fill="#ffffff" fill-opacity=".13"/>
+    <rect x="1019" y="158" width="96" height="58" rx="11" fill="#2dd4bf" fill-opacity=".14" stroke="#2dd4bf" stroke-opacity=".4"/>
+    <path d="M1031 202l14-16 12 9 14-21 14 12 18-14" stroke="#2dd4bf" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="1019" y="228" width="96" height="11" rx="5.5" fill="#ffffff" fill-opacity=".13"/>
+    <rect x="1019" y="246" width="70" height="11" rx="5.5" fill="#ffffff" fill-opacity=".09"/>
+    <rect x="1019" y="270" width="96" height="26" rx="13" fill="url(#accentBox)"/>
+    <rect x="1049" y="280" width="36" height="6" rx="3" fill="#0a1020" fill-opacity=".55"/>
+  </g>
+</g>
+</svg>
