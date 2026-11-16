@@ -73,7 +73,7 @@
     .pulse { transform-box: fill-box; transform-origin: center; animation: pulse 2s ease-out infinite; }
     @keyframes pulse { 0% { transform: scale(1); opacity: .7; } 100% { transform: scale(3.4); opacity: 0; } }
 
-    .sweep { animation: sweep 6s ease-in-out infinite; }
+    .sweep { transform: translateX(760px); animation: sweep 6s ease-in-out infinite; }
     @keyframes sweep { 0% { transform: translateX(-200px); } 50%, 100% { transform: translateX(760px); } }
 
     .f1 { animation: float 6s ease-in-out infinite; }
@@ -133,9 +133,7 @@
     @keyframes p2 { 0% { opacity: 0; } 43% { opacity: 1; } 68% { opacity: 0; } 100% { opacity: 0; } }
     @keyframes p3 { 0% { opacity: 0; } 68% { opacity: 1; } 93.6% { opacity: 0; } 100% { opacity: 0; } }
 
-    @media (prefers-reduced-motion: reduce) {
-      * { animation: none !important; }
-    }
+    @media (prefers-reduced-motion: reduce) { .a1, .a2, .a3, .run, .sweep, .f1, .f2, .f3, .f4, .f5, .pulse, .spark, .ants { animation: none !important; } }
   </style>
 
   <!-- background -->

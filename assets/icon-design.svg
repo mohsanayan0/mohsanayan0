@@ -16,7 +16,7 @@
     @keyframes curve { 0% { stroke-dashoffset: 100; } 50%, 80% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 100; } }
     .h { transform-box: fill-box; transform-origin: center; animation: h 3.600s ease-in-out infinite; }
     @keyframes h { 0%, 100% { transform: scale(.7); } 50% { transform: scale(1.150); } }
-    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    @media (prefers-reduced-motion: reduce) { .ping, .gloss { animation: none !important; } }
   </style>
   <rect x="6" y="6" width="108" height="108" rx="28" fill="url(#tile)"/>
   <rect class="gloss" x="6" y="6" width="108" height="108" rx="28" fill="url(#gloss)"/>

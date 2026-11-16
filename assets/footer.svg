@@ -42,7 +42,7 @@
     @keyframes tw { 0%, 100% { opacity: .15; } 50% { opacity: .95; } }
     .run { animation: run 8s linear infinite; }
     @keyframes run { to { stroke-dashoffset: -100; } }
-    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    @media (prefers-reduced-motion: reduce) { .wa, .wb, .wc, .a1, .run { animation: none !important; } }
   </style>
 
   <g clip-path="url(#frame)">

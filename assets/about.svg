@@ -31,7 +31,7 @@
     @keyframes blink { 50% { opacity: 0; } }
     .live { transform-box: fill-box; transform-origin: center; animation: live 2s ease-out infinite; }
     @keyframes live { 0% { transform: scale(1); opacity: .7; } 100% { transform: scale(3.2); opacity: 0; } }
-    .shine { animation: shine 5s ease-in-out infinite; }
+    .shine { transform: translateX(420px); animation: shine 5s ease-in-out infinite; }
     @keyframes shine { 0%, 40% { transform: translateX(-140px); } 70%, 100% { transform: translateX(420px); } }
     .c0 { transform: translateX(566px); animation: c0 20s linear infinite; }
     @keyframes c0 { 0%, 2.500% { transform: translateX(0); } 5.000%, 96.0% { transform: translateX(566px); } 96.01%, 100% { transform: translateX(0); } }
@@ -69,9 +69,7 @@
     @keyframes cta { 0%, 26.700% { opacity: 0; transform: translateY(8px); } 28.450%, 96.0% { opacity: 1; transform: translateY(0); } 96.01%, 100% { opacity: 0; transform: translateY(8px); } }
     .caret { animation: caret 20s steps(1, end) infinite; }
     @keyframes caret { 0% { opacity: 0; } 27.800% { opacity: 1; } 96.0% { opacity: 0; } 100% { opacity: 0; } }
-    @media (prefers-reduced-motion: reduce) {
-      * { animation: none !important; }
-    }
+    @media (prefers-reduced-motion: reduce) { .live, .shine { animation: none !important; } }
   </style>
 
   <g clip-path="url(#win)">

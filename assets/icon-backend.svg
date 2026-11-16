@@ -16,7 +16,7 @@
     @keyframes led { 0%, 100% { fill: #ffffff; } 34% { fill: #86efac; } 67% { fill: #ffffff; } }
     .d { transform-box: fill-box; transform-origin: left center; animation: d 2.4s ease-in-out infinite; }
     @keyframes d { 0%, 100% { transform: scaleX(.4); } 50% { transform: scaleX(1); } }
-    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    @media (prefers-reduced-motion: reduce) { .ping, .gloss { animation: none !important; } }
   </style>
   <rect x="6" y="6" width="108" height="108" rx="28" fill="url(#tile)"/>
   <rect class="gloss" x="6" y="6" width="108" height="108" rx="28" fill="url(#gloss)"/>
